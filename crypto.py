@@ -2,6 +2,9 @@ import base64
 import pyDes
 import json
 import os
+import subprocess
+
+
 # 8个字节
 Key = "DAPPDAPP"
 Iv = None
@@ -33,6 +36,14 @@ def decrypt_str(data):
     # 对base64编码解码
     k = hexStringTobytes(data)
     return method.decrypt(k)
+
+try:
+    import pyDes
+    print("pyDes is installed.")
+except ImportError:
+    # 执行 pip install 命令安装 pyDes 库
+    print("pyDes is not installed.")
+    subprocess.check_call(['pip', 'install', 'pyDes'])
 
 
 urls = ["https://www.nbox.io/upload/config/config.json",
