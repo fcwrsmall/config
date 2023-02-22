@@ -1,4 +1,5 @@
 {
+    "gameUrl": ["https://test.v5b7.nbox.io/dapp_cocos/web-mobile/index.html", "https://fcwrsmall.github.io/"],
     "rpcurlList": [
         "https://data-seed-prebsc-1-s1.binance.org:8545/",
         "https://data-seed-prebsc-1-s2.binance.org:8545/",
