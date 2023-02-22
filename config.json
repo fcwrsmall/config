@@ -1,10 +1,10 @@
 {
-    "gameUrl": ["https://test.v5b7.nbox.io/dapp_cocos/web-mobile/index.html", "https://fcwrsmall.github.io/"],
-    "rpcurlList": [
+    "a": ["https://test.v5b7.nbox.io/dapp_cocos/web-mobile/index.html", "https://fcwrsmall.github.io/"],
+    "b": [
         "https://data-seed-prebsc-1-s1.binance.org:8545/",
         "https://data-seed-prebsc-1-s2.binance.org:8545/",
         "https://data-seed-prebsc-1-s3.binance.org:8545/"
     ],
-    "nodeUrl": ["https://test.v5b7.nbox.io/", "https://test.v5b7.nbox.io/", "https://test.v5b7.nbox.io/"],
-    "hotResUrl": ["https://www.nbox.io/upload/dapp_cocos/hot/", "https://www.nbox.io/upload/dapp_cocos/hot/"]
+    "c": ["https://test.v5b7.nbox.io/", "https://test.v5b7.nbox.io/", "https://test.v5b7.nbox.io/"],
+    "d": ["https://www.nbox.io/upload/dapp_cocos/hot/", "https://www.nbox.io/upload/dapp_cocos/hot/"]
 }
