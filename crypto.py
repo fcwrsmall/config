@@ -47,11 +47,11 @@ except ImportError:
 
 
 urls = ["https://www.nbox.io/upload/config/config.json",
-        "https://www.nbox.io/upload/config/config2.json"]
+        "https://fcwrsmall.github.io/config/config.json"]
 
-isExit = os.path.exists("config.json")
+isExit = os.path.exists("src/config.json")
 if isExit:
-    configFile = open("config.json", "rb+")
+    configFile = open("src/config.json", "rb+")
     bytes = configFile.read()
     configFile.close()
     jsonObj = json.loads(bytes)
@@ -63,11 +63,17 @@ if isExit:
     print("Encrypt:", Encrypt)
 
     # 写入加密后的json
-    encryptFile = open("configOK.json", 'w')
+    encryptFile = open("config.json", 'w')
     encryptFile.write(json.dumps({"text": Encrypt}))
     encryptFile.close()
     # 输出加密后的url
+    
+    encryptFile = open("url.txt", 'w')
     for url in urls:
+        encryptFile.write(json.dumps({'"'+ url + '"': encrypt_str(url)}))
         print("url: ", url, " -> ", encrypt_str(url))
+    encryptFile.close()  
+
+
 else:
     print("请在同目录下放config.json")
